@@ -14,7 +14,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content:center;
 }
 
 .instagram-wrapper {
@@ -27,20 +27,20 @@ body {
 
 .instagram-phone {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* vertical */
+    justify-content: center; /* horizontal */
     width: 50%;
 }
 
 .instagram-phone img {
-    height: 50rem;
+    height: 40rem;
 }
 
 .instagram-continue {
     display: flex;
     align-items: center; /* horizontal */
     justify-content: space-around; /* vertical */
-    flex-direction: column;
+    flex-direction: column; 
     width: 50%;
     min-height: 34rem;
 }
@@ -57,11 +57,11 @@ body {
 }
 
 .group:nth-child(1) {
-    min-height: 19rem;
+    min-height: 15rem;
 }
 
 .instagram-logo {
-    height: 3rem;
+    height: 5rem;
 }
 
 .profile-photo {
@@ -72,7 +72,7 @@ body {
     overflow: hidden;
 }
 
-.profile-photo img {
+.profile-photo img{
     height: 6rem;
 }
 
@@ -84,7 +84,7 @@ body {
 }
 
 .instagram-logout {
-    color: #0095f6;
+    color:#0095f6;
     margin-top: 1rem;
 }
 
@@ -107,9 +107,9 @@ body {
 
 .download {
     display: flex;
-    width: 100%;
+    width: 80%;
     justify-content: space-evenly;
-    align-items: center;
+    align-items:center;
     padding: 1rem;
 }
 
@@ -120,26 +120,27 @@ body {
 }
 
 .app-download:nth-child(1) {
-    background-image: url('./img/apple-button.png');
+    background-image: url('./img/apple.JPG');
+    height: 2.7rem;
 }
 
 .app-download:nth-child(2) {
-    background-image: url('./img/googleplay-button.png');
+    background-image: url('./img/googleplay-button3.JPG');
+    height: 2.7rem;
 }
 
 /* media queries */
 
-
 @media (max-width: 1024px) {
-    .instagram-wrapper {
+    .instagram-wrapper{
         width: 90%;
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 650px) {  
     body {
         background-color: #ffffff;
-    }
+    }  
 
     .instagram-wrapper {
         width: 90%;
@@ -152,7 +153,7 @@ body {
     .instagram-continue {
         width: 100%;
     }
-    
+
     .group {
         border: 1px solid transparent;
     }
